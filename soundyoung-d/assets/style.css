@@ -1,59 +1,3 @@
-/* 聲揚聯合治療所 — 版本 D｜沉穩專業・質感診所（無動畫） */
-:root{
-  --cream:#FAF7F2; --paper:#FFFFFF; --tint:#F3EEE4;
-  --ink:#2B2B26; --ink-soft:#6B655A; --body-fg:#3F3A32;
-  --primary:#3E5C76; --primary-deep:#2C4359;
-  --accent:#A68763; --accent-deep:#8A6F4E;
-  --hl:#C9A227; --third:#8A6F4E;
-  --link:#3E5C76; --underline:#C9A227;
-  --line-green:#06C755;
-  --radius:8px;
-  --border:1px solid #E4DCCC;
-  --hair:#EDE6D8;
-  --shadow:0 2px 10px rgba(43,43,38,.06);
-  --chip-bg:#F3EEE4; --chip-fg:#8A6F4E;
-  --badge-fg:#2B2B26;
-  --topbar-bg:#2C4359; --topbar-fg:#EDE6DA;
-  --header-bg:rgba(250,247,242,.97); --header-border:1px solid #E4DCCC;
-  --sub-mobile-bg:#F7F3EA;
-  --num-bg:#fff; --num-fg:#3E5C76; --num-border:2px solid #3E5C76;
-  --thumb-bg:#F3EEE4; --thumb-fg:#8A6F4E;
-  --callout-border:1px solid #E4DCCC;
-  --footer-bg:#2C4359; --footer-fg:#D9DFE5;
-}
-body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.95}
-h1,h2,h3,.logo>span,.big-tel,.course .head,.step .num,.photo figcaption b{
-  font-family:"Noto Serif TC","Noto Sans TC",serif}
-.logo small{font-family:"Noto Sans TC",sans-serif;color:var(--accent-deep);letter-spacing:.2em}
-section{padding:84px 20px}
-nav a{border-bottom:2px solid transparent;font-weight:500}
-nav a:hover{color:var(--primary);border-bottom-color:#C9BFA9}
-nav a.on{color:var(--primary);border-bottom-color:var(--hl);font-weight:700}
-.nav-cta{border-radius:6px;border-bottom:none!important;padding:9px 16px}
-.sub a{border-bottom:none;padding:9px 14px;border-radius:5px}
-.sub a:hover{background:#F3EEE4}
-.eyebrow{display:inline-block;color:var(--accent-deep);font-weight:700;font-size:.8rem;letter-spacing:.32em;margin-bottom:14px;padding-left:.32em}
-.center .eyebrow::before,.center .eyebrow::after{content:"—";color:#C9BFA9;margin:0 12px;font-weight:400}
-.page-hero{padding:76px 20px 60px;border-bottom:1px solid #EDE6D8}
-.page-hero .hl,.hero h1 .hl{color:var(--primary);border-bottom:3px solid var(--hl);padding-bottom:2px;white-space:nowrap}
-.bg-paper{border-top:1px solid #EDE6D8;border-bottom:1px solid #EDE6D8}
-.btn{border-radius:5px;letter-spacing:.06em}
-.btn-tel{background:#fff;color:var(--primary);border:1px solid var(--primary)}
-.btn-tel:hover{background:var(--primary);color:#fff}
-.float-line{border-radius:6px;letter-spacing:.06em}
-.svc{border-top:4px solid var(--primary)}
-.svc.s2{border-top-color:var(--accent)}
-.svc.s3{border-top-color:var(--hl)}
-.group-title{border-left-width:4px}
-.member .badge{border-radius:4px;letter-spacing:.14em}
-.member .tags span{border-radius:4px}
-.hours-badge{border-radius:4px;letter-spacing:.05em}
-.article{padding:56px 52px}
-.article .callout{border-left:4px solid var(--hl)}
-.news-card .callout{border-left:4px solid var(--hl)}
-.check-result,.crow{border-radius:8px}
-.member:hover,.post:hover,.card:hover,.sign:hover{border-color:var(--primary)}
-@media(max-width:640px){.article{padding:32px 24px}}
 /* ===== 共用結構（三版共用；配色與字體由各版變數決定，無動畫） ===== */
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--cream);color:var(--ink);line-height:1.85;font-size:16px}
@@ -303,3 +247,59 @@ footer .legal{max-width:780px;margin:16px auto 0;opacity:.78;line-height:1.8;fon
 .float-line{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--line-green);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;box-shadow:0 8px 22px rgba(6,199,85,.35);display:flex;align-items:center;gap:8px}
 .float-line:hover{background:#05b04c}
 @media(max-width:520px){.float-line{right:12px;bottom:12px;padding:11px 18px;font-size:.9rem}}
+/* 聲揚聯合治療所 — 版本 D｜沉穩專業・質感診所（無動畫） */
+:root{
+  --cream:#FAF7F2; --paper:#FFFFFF; --tint:#F3EEE4;
+  --ink:#2B2B26; --ink-soft:#6B655A; --body-fg:#3F3A32;
+  --primary:#3E5C76; --primary-deep:#2C4359;
+  --accent:#A68763; --accent-deep:#8A6F4E;
+  --hl:#C9A227; --third:#8A6F4E;
+  --link:#3E5C76; --underline:#C9A227;
+  --line-green:#06C755;
+  --radius:8px;
+  --border:1px solid #E4DCCC;
+  --hair:#EDE6D8;
+  --shadow:0 2px 10px rgba(43,43,38,.06);
+  --chip-bg:#F3EEE4; --chip-fg:#8A6F4E;
+  --badge-fg:#2B2B26;
+  --topbar-bg:#2C4359; --topbar-fg:#EDE6DA;
+  --header-bg:rgba(250,247,242,.97); --header-border:1px solid #E4DCCC;
+  --sub-mobile-bg:#F7F3EA;
+  --num-bg:#fff; --num-fg:#3E5C76; --num-border:2px solid #3E5C76;
+  --thumb-bg:#F3EEE4; --thumb-fg:#8A6F4E;
+  --callout-border:1px solid #E4DCCC;
+  --footer-bg:#2C4359; --footer-fg:#D9DFE5;
+}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.95}
+h1,h2,h3,.logo>span,.big-tel,.course .head,.step .num,.photo figcaption b{
+  font-family:"Noto Serif TC","Noto Sans TC",serif}
+.logo small{font-family:"Noto Sans TC",sans-serif;color:var(--accent-deep);letter-spacing:.2em}
+section{padding:84px 20px}
+nav a{border-bottom:2px solid transparent;font-weight:500}
+nav a:hover{color:var(--primary);border-bottom-color:#C9BFA9}
+nav a.on{color:var(--primary);border-bottom-color:var(--hl);font-weight:700}
+.nav-cta{border-radius:6px;border-bottom:none!important;padding:9px 16px}
+.sub a{border-bottom:none;padding:9px 14px;border-radius:5px}
+.sub a:hover{background:#F3EEE4}
+.eyebrow{display:inline-block;color:var(--accent-deep);font-weight:700;font-size:.8rem;letter-spacing:.32em;margin-bottom:14px;padding-left:.32em}
+.center .eyebrow::before,.center .eyebrow::after{content:"—";color:#C9BFA9;margin:0 12px;font-weight:400}
+.page-hero{padding:76px 20px 60px;border-bottom:1px solid #EDE6D8}
+.page-hero .hl,.hero h1 .hl{color:var(--primary);border-bottom:3px solid var(--hl);padding-bottom:2px;white-space:nowrap}
+.bg-paper{border-top:1px solid #EDE6D8;border-bottom:1px solid #EDE6D8}
+.btn{border-radius:5px;letter-spacing:.06em}
+.btn-tel{background:#fff;color:var(--primary);border:1px solid var(--primary)}
+.btn-tel:hover{background:var(--primary);color:#fff}
+.float-line{border-radius:6px;letter-spacing:.06em}
+.svc{border-top:4px solid var(--primary)}
+.svc.s2{border-top-color:var(--accent)}
+.svc.s3{border-top-color:var(--hl)}
+.group-title{border-left-width:4px}
+.member .badge{border-radius:4px;letter-spacing:.14em}
+.member .tags span{border-radius:4px}
+.hours-badge{border-radius:4px;letter-spacing:.05em}
+.article{padding:56px 52px}
+.article .callout{border-left:4px solid var(--hl)}
+.news-card .callout{border-left:4px solid var(--hl)}
+.check-result,.crow{border-radius:8px}
+.member:hover,.post:hover,.card:hover,.sign:hover{border-color:var(--primary)}
+@media(max-width:640px){.article{padding:32px 24px}}

@@ -1,86 +1,3 @@
-/* 聲揚聯合治療所 — 版本 E｜暖陽奶油・日系柔和（無動畫）
-   參考方向：療癒系親子品牌常見的大量留白 + 無框卡片 + 溫潤楷體標題 */
-:root{
-  --cream:#FFFCF6; --paper:#FFF8EE; --tint:#F6EFE3;
-  --ink:#4A4038; --ink-soft:#8B7F71; --body-fg:#5A5046;
-  --primary:#E39A6B; --primary-deep:#C97F4E;
-  --accent:#9CAE93; --accent-deep:#7C8F73;
-  --hl:#F5D9A8; --third:#C9A98A;
-  --link:#C97F4E; --underline:#E39A6B;
-  --line-green:#06C755;
-  --radius:18px;
-  --border:none;
-  --hair:#EDE2D2;
-  --shadow:none;
-  --chip-bg:#F6EFE3; --chip-fg:#A97A4E;
-  --badge-fg:#4A4038;
-  --topbar-bg:#E39A6B; --topbar-fg:#fff;
-  --header-bg:rgba(255,252,246,.95); --header-border:1px solid #F0E5D5;
-  --sub-mobile-bg:#F6EFE3;
-  --num-bg:transparent; --num-fg:#C97F4E; --num-border:1px solid #E3C9A8;
-  --thumb-bg:#F6EFE3; --thumb-fg:#A97A4E;
-  --callout-border:none;
-  --footer-bg:#6D5B4B; --footer-fg:#F3E9DC;
-}
-body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;font-weight:400;line-height:2}
-h1,h2,h3,.logo>span,.big-tel,.course .head,.photo figcaption b,.post .thumb-plain span{
-  font-family:"LXGW WenKai TC","Noto Sans TC","Microsoft JhengHei",sans-serif;font-weight:700}
-h1.page-title,.hero h1{letter-spacing:.09em;line-height:1.7}
-h2{letter-spacing:.08em}
-section{padding:92px 20px}
-
-/* 導覽：極簡細線 */
-.topbar{letter-spacing:.06em}
-nav a{border-radius:999px;font-weight:400;letter-spacing:.04em}
-nav a:hover{background:#F6EFE3;color:var(--primary-deep)}
-nav a.on{background:#F6EFE3;color:var(--primary-deep);font-weight:700}
-.sub{border:1px solid #F0E5D5;box-shadow:0 6px 22px rgba(74,64,56,.07)}
-.sub a{border-radius:10px}
-.logo small{color:#B8A38C;letter-spacing:.2em}
-
-.eyebrow{display:inline-block;color:var(--primary-deep);font-weight:400;font-size:.78rem;letter-spacing:.36em;margin-bottom:16px;padding-left:.36em}
-.center .eyebrow::before,.center .eyebrow::after{content:"◦";color:#DCC7AC;margin:0 14px}
-.page-hero{padding:80px 20px 62px;border-bottom:1px solid #F0E5D5}
-.page-hero .hl,.hero h1 .hl{color:var(--primary-deep);position:relative;white-space:nowrap}
-.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--hl);border-radius:2px}
-.sec-sub{line-height:2}
-
-/* 無框卡片：只用底色與細線區隔 */
-.card,.svc,.step,.member,.course,.post,.photo,.partner,.sign,.crow,.article,.table-wrap,.faq details{
-  background:var(--paper);box-shadow:none;border:none}
-.card,.svc,.step,.sign{border:1px solid #F0E5D5}
-.bg-paper{background:#fff;border-top:1px solid #F5EBDC;border-bottom:1px solid #F5EBDC}
-
-.btn{border-radius:999px;font-weight:700;letter-spacing:.06em;padding:14px 30px}
-.btn-tel{background:transparent;color:var(--primary-deep);border:1px solid var(--primary)}
-.btn-tel:hover{background:#F6EFE3}
-.float-line{border-radius:999px}
-
-.svc .icon{width:76px;height:76px}
-.svc li{border-bottom:1px solid var(--hair)}
-.course .head{letter-spacing:.1em;font-size:1.1rem}
-.member{border:1px solid #F0E5D5}
-.member .photo-wrap{aspect-ratio:1/1}
-.member h3{letter-spacing:.12em;font-size:1.3rem}
-.member .mblock b{font-weight:400;letter-spacing:.24em;color:#B08A62}
-.member .tags span{border-radius:999px}
-.photo{border:1px solid #F0E5D5}
-.photo figcaption{padding:16px 20px}
-.partner{border:1px solid #F0E5D5}
-.group-title{border-left:2px solid var(--primary);padding-left:18px;letter-spacing:.1em}
-.step .num{font-weight:700}
-table.strat{border:1px solid #F0E5D5}
-table.strat th{background:#F6EFE3;color:var(--primary-deep);font-weight:700;letter-spacing:.1em}
-.table-wrap{border:1px solid #F0E5D5}
-.article{border:1px solid #F0E5D5;padding:60px 54px}
-.article h2{border-left:3px solid var(--hl);letter-spacing:.06em}
-.article .callout{background:#F6EFE3;border-left:3px solid var(--primary)}
-.news-card{border:1px solid #F0E5D5}
-.news-card .callout{background:#F6EFE3;border-left:3px solid var(--primary)}
-.crow{border:1px solid #F0E5D5}
-.hours-badge{border-radius:999px}
-ul.causes li{border-radius:999px;font-weight:400}
-@media(max-width:640px){.article{padding:32px 24px}}
 /* ===== 共用結構（三版共用；配色與字體由各版變數決定，無動畫） ===== */
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--cream);color:var(--ink);line-height:1.85;font-size:16px}
@@ -330,3 +247,86 @@ footer .legal{max-width:780px;margin:16px auto 0;opacity:.78;line-height:1.8;fon
 .float-line{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--line-green);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;box-shadow:0 8px 22px rgba(6,199,85,.35);display:flex;align-items:center;gap:8px}
 .float-line:hover{background:#05b04c}
 @media(max-width:520px){.float-line{right:12px;bottom:12px;padding:11px 18px;font-size:.9rem}}
+/* 聲揚聯合治療所 — 版本 E｜暖陽奶油・日系柔和（無動畫）
+   參考方向：療癒系親子品牌常見的大量留白 + 無框卡片 + 溫潤楷體標題 */
+:root{
+  --cream:#FFFCF6; --paper:#FFF8EE; --tint:#F6EFE3;
+  --ink:#4A4038; --ink-soft:#8B7F71; --body-fg:#5A5046;
+  --primary:#E39A6B; --primary-deep:#C97F4E;
+  --accent:#9CAE93; --accent-deep:#7C8F73;
+  --hl:#F5D9A8; --third:#C9A98A;
+  --link:#C97F4E; --underline:#E39A6B;
+  --line-green:#06C755;
+  --radius:18px;
+  --border:none;
+  --hair:#EDE2D2;
+  --shadow:none;
+  --chip-bg:#F6EFE3; --chip-fg:#A97A4E;
+  --badge-fg:#4A4038;
+  --topbar-bg:#E39A6B; --topbar-fg:#fff;
+  --header-bg:rgba(255,252,246,.95); --header-border:1px solid #F0E5D5;
+  --sub-mobile-bg:#F6EFE3;
+  --num-bg:transparent; --num-fg:#C97F4E; --num-border:1px solid #E3C9A8;
+  --thumb-bg:#F6EFE3; --thumb-fg:#A97A4E;
+  --callout-border:none;
+  --footer-bg:#6D5B4B; --footer-fg:#F3E9DC;
+}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;font-weight:400;line-height:2}
+h1,h2,h3,.logo>span,.big-tel,.course .head,.photo figcaption b,.post .thumb-plain span{
+  font-family:"LXGW WenKai TC","Noto Sans TC","Microsoft JhengHei",sans-serif;font-weight:700}
+h1.page-title,.hero h1{letter-spacing:.09em;line-height:1.7}
+h2{letter-spacing:.08em}
+section{padding:92px 20px}
+
+/* 導覽：極簡細線 */
+.topbar{letter-spacing:.06em}
+nav a{border-radius:999px;font-weight:400;letter-spacing:.04em}
+nav a:hover{background:#F6EFE3;color:var(--primary-deep)}
+nav a.on{background:#F6EFE3;color:var(--primary-deep);font-weight:700}
+.sub{border:1px solid #F0E5D5;box-shadow:0 6px 22px rgba(74,64,56,.07)}
+.sub a{border-radius:10px}
+.logo small{color:#B8A38C;letter-spacing:.2em}
+
+.eyebrow{display:inline-block;color:var(--primary-deep);font-weight:400;font-size:.78rem;letter-spacing:.36em;margin-bottom:16px;padding-left:.36em}
+.center .eyebrow::before,.center .eyebrow::after{content:"◦";color:#DCC7AC;margin:0 14px}
+.page-hero{padding:80px 20px 62px;border-bottom:1px solid #F0E5D5}
+.page-hero .hl,.hero h1 .hl{color:var(--primary-deep);position:relative;white-space:nowrap}
+.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--hl);border-radius:2px}
+.sec-sub{line-height:2}
+
+/* 無框卡片：只用底色與細線區隔 */
+.card,.svc,.step,.member,.course,.post,.photo,.partner,.sign,.crow,.article,.table-wrap,.faq details{
+  background:var(--paper);box-shadow:none;border:none}
+.card,.svc,.step,.sign{border:1px solid #F0E5D5}
+.bg-paper{background:#fff;border-top:1px solid #F5EBDC;border-bottom:1px solid #F5EBDC}
+
+.btn{border-radius:999px;font-weight:700;letter-spacing:.06em;padding:14px 30px}
+.btn-tel{background:transparent;color:var(--primary-deep);border:1px solid var(--primary)}
+.btn-tel:hover{background:#F6EFE3}
+.float-line{border-radius:999px}
+
+.svc .icon{width:76px;height:76px}
+.svc li{border-bottom:1px solid var(--hair)}
+.course .head{letter-spacing:.1em;font-size:1.1rem}
+.member{border:1px solid #F0E5D5}
+.member .photo-wrap{aspect-ratio:1/1}
+.member h3{letter-spacing:.12em;font-size:1.3rem}
+.member .mblock b{font-weight:400;letter-spacing:.24em;color:#B08A62}
+.member .tags span{border-radius:999px}
+.photo{border:1px solid #F0E5D5}
+.photo figcaption{padding:16px 20px}
+.partner{border:1px solid #F0E5D5}
+.group-title{border-left:2px solid var(--primary);padding-left:18px;letter-spacing:.1em}
+.step .num{font-weight:700}
+table.strat{border:1px solid #F0E5D5}
+table.strat th{background:#F6EFE3;color:var(--primary-deep);font-weight:700;letter-spacing:.1em}
+.table-wrap{border:1px solid #F0E5D5}
+.article{border:1px solid #F0E5D5;padding:60px 54px}
+.article h2{border-left:3px solid var(--hl);letter-spacing:.06em}
+.article .callout{background:#F6EFE3;border-left:3px solid var(--primary)}
+.news-card{border:1px solid #F0E5D5}
+.news-card .callout{background:#F6EFE3;border-left:3px solid var(--primary)}
+.crow{border:1px solid #F0E5D5}
+.hours-badge{border-radius:999px}
+ul.causes li{border-radius:999px;font-weight:400}
+@media(max-width:640px){.article{padding:32px 24px}}

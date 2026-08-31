@@ -1,49 +1,3 @@
-/* 聲揚聯合治療所 — 版本 C｜明亮親子・繪本風（無動畫） */
-:root{
-  --cream:#F3F9FF; --paper:#FFFFFF; --tint:#FFF7E0;
-  --ink:#33475C; --ink-soft:#5E7186; --body-fg:#3E4C5E;
-  --primary:#5AA9E6; --primary-deep:#3D8CC9;
-  --accent:#66C3A6; --accent-deep:#3D8CC9;
-  --hl:#FFD166; --third:#F4A259;
-  --link:#3D8CC9; --underline:#FFD166;
-  --line-green:#06C755;
-  --radius:18px;
-  --border:3px solid #33475C;
-  --hair:rgba(70,100,140,.22);
-  --shadow:5px 5px 0 rgba(51,71,92,.13);
-  --chip-bg:#FFD166; --chip-fg:#33475C;
-  --badge-fg:#33475C;
-  --topbar-bg:#5AA9E6; --topbar-fg:#fff;
-  --header-bg:#fff; --header-border:3px solid #33475C;
-  --sub-mobile-bg:#EAF4FD;
-  --num-bg:#FFD166; --num-fg:#33475C; --num-border:3px solid #33475C;
-  --thumb-bg:#EAF4FD; --thumb-fg:#3D8CC9;
-  --callout-border:3px solid #33475C;
-  --footer-bg:#3D8CC9; --footer-fg:#F0F8FF;
-}
-body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.9}
-h1,h2,h3,.logo>span,.eyebrow,.course .head,.step .num,.big-tel,.post .thumb-plain span{
-  font-family:"Huninn","Noto Sans TC","Microsoft JhengHei",sans-serif}
-.logo small{font-family:"Noto Sans TC",sans-serif}
-nav a{font-weight:700;border-radius:999px}
-nav a:hover{background:rgba(255,209,102,.45)}
-nav a.on{background:var(--hl)}
-.sub{border:3px solid #33475C}
-.sub a{border-radius:9px}
-.eyebrow{display:inline-block;background:var(--hl);color:var(--ink);font-weight:700;font-size:.88rem;letter-spacing:.14em;padding:4px 18px;border-radius:11px;margin-bottom:14px;border:2px solid var(--ink)}
-.page-hero .hl,.hero h1 .hl{position:relative;white-space:nowrap}
-.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:-2%;right:-2%;bottom:4px;height:.46em;background:var(--hl);z-index:-1;border-radius:5px}
-.btn{border-radius:999px;font-weight:900;border:3px solid var(--ink);box-shadow:4px 4px 0 rgba(51,71,92,.26)}
-.btn-tel{background:#fff;color:var(--primary-deep)}
-.btn-tel:hover{background:#EAF4FD}
-.float-line{border-radius:999px;border:3px solid var(--ink);box-shadow:4px 4px 0 rgba(51,71,92,.3);font-weight:900}
-.course .head{border-bottom:3px solid var(--ink)}
-.post .thumb img,.member .photo-wrap{border-bottom:3px solid var(--ink)}
-.member .badge{border:2px solid var(--ink)}
-.hours-badge{border:2px solid var(--ink)}
-.info-card h3 .dot{border:2px solid var(--ink);width:14px;height:14px}
-.card:hover,.post:hover,.sign:hover{background:#F8FBFF}
-table.strat th{border-bottom:3px solid var(--ink)}
 /* ===== 共用結構（三版共用；配色與字體由各版變數決定，無動畫） ===== */
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--cream);color:var(--ink);line-height:1.85;font-size:16px}
@@ -293,3 +247,49 @@ footer .legal{max-width:780px;margin:16px auto 0;opacity:.78;line-height:1.8;fon
 .float-line{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--line-green);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;box-shadow:0 8px 22px rgba(6,199,85,.35);display:flex;align-items:center;gap:8px}
 .float-line:hover{background:#05b04c}
 @media(max-width:520px){.float-line{right:12px;bottom:12px;padding:11px 18px;font-size:.9rem}}
+/* 聲揚聯合治療所 — 版本 C｜明亮親子・繪本風（無動畫） */
+:root{
+  --cream:#F3F9FF; --paper:#FFFFFF; --tint:#FFF7E0;
+  --ink:#33475C; --ink-soft:#5E7186; --body-fg:#3E4C5E;
+  --primary:#5AA9E6; --primary-deep:#3D8CC9;
+  --accent:#66C3A6; --accent-deep:#3D8CC9;
+  --hl:#FFD166; --third:#F4A259;
+  --link:#3D8CC9; --underline:#FFD166;
+  --line-green:#06C755;
+  --radius:18px;
+  --border:3px solid #33475C;
+  --hair:rgba(70,100,140,.22);
+  --shadow:5px 5px 0 rgba(51,71,92,.13);
+  --chip-bg:#FFD166; --chip-fg:#33475C;
+  --badge-fg:#33475C;
+  --topbar-bg:#5AA9E6; --topbar-fg:#fff;
+  --header-bg:#fff; --header-border:3px solid #33475C;
+  --sub-mobile-bg:#EAF4FD;
+  --num-bg:#FFD166; --num-fg:#33475C; --num-border:3px solid #33475C;
+  --thumb-bg:#EAF4FD; --thumb-fg:#3D8CC9;
+  --callout-border:3px solid #33475C;
+  --footer-bg:#3D8CC9; --footer-fg:#F0F8FF;
+}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.9}
+h1,h2,h3,.logo>span,.eyebrow,.course .head,.step .num,.big-tel,.post .thumb-plain span{
+  font-family:"Huninn","Noto Sans TC","Microsoft JhengHei",sans-serif}
+.logo small{font-family:"Noto Sans TC",sans-serif}
+nav a{font-weight:700;border-radius:999px}
+nav a:hover{background:rgba(255,209,102,.45)}
+nav a.on{background:var(--hl)}
+.sub{border:3px solid #33475C}
+.sub a{border-radius:9px}
+.eyebrow{display:inline-block;background:var(--hl);color:var(--ink);font-weight:700;font-size:.88rem;letter-spacing:.14em;padding:4px 18px;border-radius:11px;margin-bottom:14px;border:2px solid var(--ink)}
+.page-hero .hl,.hero h1 .hl{position:relative;white-space:nowrap}
+.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:-2%;right:-2%;bottom:4px;height:.46em;background:var(--hl);z-index:-1;border-radius:5px}
+.btn{border-radius:999px;font-weight:900;border:3px solid var(--ink);box-shadow:4px 4px 0 rgba(51,71,92,.26)}
+.btn-tel{background:#fff;color:var(--primary-deep)}
+.btn-tel:hover{background:#EAF4FD}
+.float-line{border-radius:999px;border:3px solid var(--ink);box-shadow:4px 4px 0 rgba(51,71,92,.3);font-weight:900}
+.course .head{border-bottom:3px solid var(--ink)}
+.post .thumb img,.member .photo-wrap{border-bottom:3px solid var(--ink)}
+.member .badge{border:2px solid var(--ink)}
+.hours-badge{border:2px solid var(--ink)}
+.info-card h3 .dot{border:2px solid var(--ink);width:14px;height:14px}
+.card:hover,.post:hover,.sign:hover{background:#F8FBFF}
+table.strat th{border-bottom:3px solid var(--ink)}

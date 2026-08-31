@@ -1,39 +1,3 @@
-/* 聲揚聯合治療所 — 版本 B｜清新自然・森林系（無動畫） */
-:root{
-  --cream:#F5F7EF; --paper:#FCFDF8; --tint:#EAF2E0;
-  --ink:#3A4A3C; --ink-soft:#66756C; --body-fg:#49564B;
-  --primary:#6B9E63; --primary-deep:#4F7C4A;
-  --accent:#D9925F; --accent-deep:#B5744A;
-  --hl:#C6D896; --third:#8FA03E;
-  --link:#4F7C4A; --underline:#6B9E63;
-  --line-green:#06C755;
-  --radius:20px;
-  --border:1px solid rgba(107,158,99,.30);
-  --hair:rgba(73,92,75,.16);
-  --shadow:0 5px 18px rgba(58,74,60,.09);
-  --chip-bg:rgba(198,216,150,.45); --chip-fg:#4F7C4A;
-  --badge-fg:#3A4A3C;
-  --topbar-bg:#4F7C4A; --topbar-fg:#fff;
-  --header-bg:rgba(245,247,239,.96); --header-border:1px solid rgba(107,158,99,.32);
-  --sub-mobile-bg:rgba(107,158,99,.10);
-  --num-bg:#6B9E63; --num-fg:#fff; --num-border:none;
-  --thumb-bg:#EAF2E0; --thumb-fg:#4F7C4A;
-  --callout-border:2px dashed #6B9E63;
-  --footer-bg:#3B5238; --footer-fg:#EAF2E4;
-}
-body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif}
-nav a{border-radius:12px}
-nav a:hover,nav a.on{background:rgba(107,158,99,.16);color:var(--primary-deep)}
-.sub{border:1px solid rgba(107,158,99,.28)}
-.sub a{border-radius:9px}
-.eyebrow{display:inline-block;background:rgba(198,216,150,.45);color:var(--primary-deep);font-weight:700;font-size:.84rem;letter-spacing:.18em;padding:4px 16px;border-radius:999px;margin-bottom:13px}
-.page-hero .hl,.hero h1 .hl{position:relative;white-space:nowrap}
-.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:-2%;right:-2%;bottom:5px;height:.42em;background:var(--hl);opacity:.65;z-index:-1;border-radius:5px}
-.btn{border-radius:12px;box-shadow:var(--shadow)}
-.btn-tel{background:#fff;color:var(--primary-deep);border:2px solid var(--primary)}
-.btn-tel:hover{background:rgba(107,158,99,.10)}
-.float-line{border-radius:14px}
-.member:hover,.post:hover,.photo:hover{border-color:var(--primary)}
 /* ===== 共用結構（三版共用；配色與字體由各版變數決定，無動畫） ===== */
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--cream);color:var(--ink);line-height:1.85;font-size:16px}
@@ -283,3 +247,39 @@ footer .legal{max-width:780px;margin:16px auto 0;opacity:.78;line-height:1.8;fon
 .float-line{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--line-green);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;box-shadow:0 8px 22px rgba(6,199,85,.35);display:flex;align-items:center;gap:8px}
 .float-line:hover{background:#05b04c}
 @media(max-width:520px){.float-line{right:12px;bottom:12px;padding:11px 18px;font-size:.9rem}}
+/* 聲揚聯合治療所 — 版本 B｜清新自然・森林系（無動畫） */
+:root{
+  --cream:#F5F7EF; --paper:#FCFDF8; --tint:#EAF2E0;
+  --ink:#3A4A3C; --ink-soft:#66756C; --body-fg:#49564B;
+  --primary:#6B9E63; --primary-deep:#4F7C4A;
+  --accent:#D9925F; --accent-deep:#B5744A;
+  --hl:#C6D896; --third:#8FA03E;
+  --link:#4F7C4A; --underline:#6B9E63;
+  --line-green:#06C755;
+  --radius:20px;
+  --border:1px solid rgba(107,158,99,.30);
+  --hair:rgba(73,92,75,.16);
+  --shadow:0 5px 18px rgba(58,74,60,.09);
+  --chip-bg:rgba(198,216,150,.45); --chip-fg:#4F7C4A;
+  --badge-fg:#3A4A3C;
+  --topbar-bg:#4F7C4A; --topbar-fg:#fff;
+  --header-bg:rgba(245,247,239,.96); --header-border:1px solid rgba(107,158,99,.32);
+  --sub-mobile-bg:rgba(107,158,99,.10);
+  --num-bg:#6B9E63; --num-fg:#fff; --num-border:none;
+  --thumb-bg:#EAF2E0; --thumb-fg:#4F7C4A;
+  --callout-border:2px dashed #6B9E63;
+  --footer-bg:#3B5238; --footer-fg:#EAF2E4;
+}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif}
+nav a{border-radius:12px}
+nav a:hover,nav a.on{background:rgba(107,158,99,.16);color:var(--primary-deep)}
+.sub{border:1px solid rgba(107,158,99,.28)}
+.sub a{border-radius:9px}
+.eyebrow{display:inline-block;background:rgba(198,216,150,.45);color:var(--primary-deep);font-weight:700;font-size:.84rem;letter-spacing:.18em;padding:4px 16px;border-radius:999px;margin-bottom:13px}
+.page-hero .hl,.hero h1 .hl{position:relative;white-space:nowrap}
+.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:-2%;right:-2%;bottom:5px;height:.42em;background:var(--hl);opacity:.65;z-index:-1;border-radius:5px}
+.btn{border-radius:12px;box-shadow:var(--shadow)}
+.btn-tel{background:#fff;color:var(--primary-deep);border:2px solid var(--primary)}
+.btn-tel:hover{background:rgba(107,158,99,.10)}
+.float-line{border-radius:14px}
+.member:hover,.post:hover,.photo:hover{border-color:var(--primary)}

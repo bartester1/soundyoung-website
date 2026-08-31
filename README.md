@@ -1,10 +1,10 @@
-# 聲揚聯合治療所 — 官網五版本（完整實際內容）
+# 聲揚聯合治療所 — 官網六版本（完整實際內容）
 
 內容與照片全部取自官網 https://www.soundyoung.com.tw/ （擷取日期 2026-08-31），**沒有任何佔位或示意文字**。
 
 線上 demo：https://bartester1.github.io/soundyoung-website/
 
-## 五個版本
+## 六個版本
 
 | 資料夾 | 風格 | 主色 | 字體 |
 |---|---|---|---|
@@ -13,8 +13,9 @@
 | `soundyoung-d` | 沉穩專業・質感診所 | 深藍灰＋暖米＋金線 | Noto Serif TC 明體＋Noto Sans TC |
 | `soundyoung-e` | 暖陽奶油・日系柔和 | 奶油白＋杏桃橘＋灰綠（無框、大量留白） | LXGW WenKai TC 楷體＋Noto Sans TC |
 | `soundyoung-f` | 現代明快・大字排版 | 近黑＋珊瑚橘＋鵝黃（高對比、方正邊角） | Noto Sans TC 900 |
+| `soundyoung-g` | 薰衣草薄荷・有機圓弧 | 薰衣草紫＋薄荷綠＋杏橘（不對稱圓角、無直角） | Noto Sans TC＋Zen Maru Gothic（拉丁字） |
 
-五版**頁面結構與文字內容完全相同**，只有 `assets/style.css` 不同。挑一個資料夾整包上傳即可上線。
+六版**頁面結構與文字內容完全相同**，只有 `assets/style.css` 不同。挑一個資料夾整包上傳即可上線。
 全部為靜態 HTML／CSS，無框架、無建置工具、**無動畫**，桌機與手機 RWD 都已實測。
 
 ## 每版包含 15 頁

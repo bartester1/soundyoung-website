@@ -247,94 +247,102 @@ footer .legal{max-width:780px;margin:16px auto 0;opacity:.78;line-height:1.8;fon
 .float-line{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--line-green);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;box-shadow:0 8px 22px rgba(6,199,85,.35);display:flex;align-items:center;gap:8px}
 .float-line:hover{background:#05b04c}
 @media(max-width:520px){.float-line{right:12px;bottom:12px;padding:11px 18px;font-size:.9rem}}
-/* 聲揚聯合治療所 — 版本 F｜現代明快・大字排版（無動畫）
-   參考方向：國外治療所常見的大標語 hero + 高對比色塊 + 方正俐落的編輯式版面 */
+/* 聲揚聯合治療所 — 版本 G｜薰衣草薄荷・有機圓弧（無動畫）
+   參考方向：2026 國外兒童治療所主流做法——避開 90 度直角、改用柔和有機曲線，
+   薰衣草紫配薄荷綠的安撫型配色，humanist 無襯線字體搭配寬鬆行距。 */
 :root{
-  --cream:#F4F5F7; --paper:#FFFFFF; --tint:#FFF0EB;
-  --ink:#16181D; --ink-soft:#5C6270; --body-fg:#2E323B;
-  --primary:#FF6A45; --primary-deep:#E14E2A;
-  --accent:#14B8A6; --accent-deep:#0E8C7E;
-  --hl:#FFC94D; --third:#16181D;
-  --link:#E14E2A; --underline:#FF6A45;
+  --cream:#FAF8FF; --paper:#FFFFFF; --tint:#F1EEFB;
+  --ink:#33305A; --ink-soft:#6E6A8A; --body-fg:#403C68;
+  --primary:#8B7FD4; --primary-deep:#6C61B8;
+  --accent:#5FC9AF; --accent-deep:#3FA890;
+  --hl:#F7C58E; --third:#5FC9AF;
+  --link:#6C61B8; --underline:#8B7FD4;
   --line-green:#06C755;
-  --radius:4px;
-  --border:1px solid #E1E4EA;
-  --hair:#E8EBF0;
-  --shadow:none;
-  --chip-bg:#16181D; --chip-fg:#fff;
-  --badge-fg:#16181D;
-  --topbar-bg:#16181D; --topbar-fg:#fff;
-  --header-bg:rgba(255,255,255,.97); --header-border:2px solid #16181D;
-  --sub-mobile-bg:#F4F5F7;
-  --num-bg:#16181D; --num-fg:#fff; --num-border:none;
-  --thumb-bg:#16181D; --thumb-fg:#FFC94D;
+  --radius:26px;
+  --border:1px solid #E7E2F7;
+  --hair:#EEEAF9;
+  --shadow:0 10px 30px rgba(88,78,150,.10);
+  --chip-bg:#EFEBFC; --chip-fg:#6C61B8;
+  --badge-fg:#33305A;
+  --topbar-bg:#8B7FD4; --topbar-fg:#fff;
+  --header-bg:rgba(250,248,255,.96); --header-border:1px solid #EAE5F8;
+  --sub-mobile-bg:#F1EEFB;
+  --num-bg:#8B7FD4; --num-fg:#fff; --num-border:none;
+  --thumb-bg:#F1EEFB; --thumb-fg:#6C61B8;
   --callout-border:none;
-  --footer-bg:#16181D; --footer-fg:#C9CFDA;
+  --footer-bg:#4A4280; --footer-fg:#EDE9FB;
 }
-body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8}
-h1,h2,h3{font-weight:900;letter-spacing:-.01em}
-section{padding:76px 20px}
+body{font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;font-weight:400;line-height:1.95}
+h1,h2,h3{font-weight:900;letter-spacing:.03em}
+/* 拉丁字母與數字用圓體，中文維持 Noto Sans TC（避免缺字） */
+.logo small,.step .num,.sign .n,.big-tel,.course .price{
+  font-family:"Zen Maru Gothic","Noto Sans TC",sans-serif}
+section{padding:80px 20px}
 
-/* 導覽：方正、底線指示 */
-.topbar{font-weight:500;letter-spacing:.08em}
-.logo img{border-radius:4px}
-.logo small{letter-spacing:.18em;color:#8A90A0}
-nav a{border-radius:3px;font-weight:700;font-size:.95rem}
-nav a:hover{background:#F0F2F5}
-nav a.on{background:#16181D;color:#fff}
-.nav-cta{border-radius:3px}
-.sub{border:2px solid #16181D;border-radius:4px}
-.sub a{border-radius:2px}
+/* 導覽：全圓角膠囊 */
+.topbar{letter-spacing:.04em}
+.logo img{border-radius:50%}
+.logo small{color:#9A93BE;letter-spacing:.18em}
+nav a{border-radius:999px;font-weight:500}
+nav a:hover{background:#F1EEFB;color:var(--primary-deep)}
+nav a.on{background:var(--primary);color:#fff;font-weight:700}
+.sub{border:1px solid #E7E2F7;border-radius:22px}
+.sub a{border-radius:999px}
 
-.eyebrow{display:inline-block;background:#16181D;color:#fff;font-weight:700;font-size:.74rem;letter-spacing:.24em;padding:5px 14px;border-radius:2px;margin-bottom:16px}
-h1.page-title{font-size:clamp(1.9rem,5vw,3rem);line-height:1.35}
-h2{font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.4}
-.page-hero{padding:78px 20px 62px;border-bottom:2px solid #16181D;background:#fff}
-.page-hero .hl,.hero h1 .hl{color:var(--primary-deep);position:relative;white-space:nowrap}
-.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:6px;background:var(--hl);z-index:-1}
+.eyebrow{display:inline-block;background:#EFEBFC;color:var(--primary-deep);font-weight:700;font-size:.84rem;letter-spacing:.16em;padding:6px 20px;border-radius:999px;margin-bottom:14px}
+.page-hero{padding:74px 20px 58px;background:var(--paper);border-bottom:1px solid #EFEBFC}
+.page-hero .hl,.hero h1 .hl{position:relative;white-space:nowrap;color:var(--primary-deep)}
+.page-hero .hl::after,.hero h1 .hl::after{content:"";position:absolute;left:-1%;right:-1%;bottom:4px;height:.4em;background:var(--hl);opacity:.55;z-index:-1;border-radius:999px}
+.sec-sub{line-height:1.95}
 
-/* 首頁 hero：左對齊大字 */
-.hero h1{font-size:clamp(2rem,5.2vw,3.4rem);line-height:1.3;letter-spacing:-.01em}
-.hero-img img{border-radius:4px;border:2px solid #16181D}
+/* 有機不對稱圓角：左上／右下大圓，右上／左下小圓 */
+.card,.svc,.step,.sign,.course,.post,.partner,.news-card,.article,.table-wrap,.faq details{
+  border-radius:38px 14px 38px 14px}
+.member{border-radius:38px 14px 38px 14px;overflow:hidden}
+.member .photo-wrap{aspect-ratio:1/1}
+.photo{border-radius:38px 14px 38px 14px;overflow:hidden}
+.hero-img img{border-radius:56px 18px 56px 18px}
+.split-img img{border-radius:56px 18px 56px 18px}
+.article .art-img{border-radius:38px 14px 38px 14px}
+.crow{border-radius:999px;padding:16px 26px}
 
-.btn{border-radius:3px;font-weight:700;padding:15px 30px}
-.btn-tel{background:#16181D;color:#fff;border:2px solid #16181D}
-.btn-tel:hover{background:#fff;color:#16181D}
-.btn-line{border:2px solid var(--line-green)}
-.float-line{border-radius:3px;font-weight:700}
+.btn{border-radius:999px;font-weight:700;padding:14px 30px;box-shadow:0 6px 18px rgba(88,78,150,.14)}
+.btn-tel{background:#fff;color:var(--primary-deep);border:2px solid var(--primary)}
+.btn-tel:hover{background:#F1EEFB}
+.float-line{border-radius:999px}
 
-/* 卡片：細框 + 頂部色條 */
-.card,.step,.sign,.crow,.partner,.photo,.post,.member,.course,.table-wrap,.article,.news-card{
-  border:1px solid #E1E4EA;border-radius:4px;box-shadow:none}
-.svc{border:1px solid #E1E4EA;border-top:6px solid var(--primary);border-radius:4px}
-.svc.s2{border-top-color:var(--accent)}
-.svc.s3{border-top-color:var(--hl)}
-.svc .icon{width:72px;height:72px}
-.bg-paper{background:#fff;border-top:1px solid #E1E4EA;border-bottom:1px solid #E1E4EA}
+.svc{border-top:none}
+.svc .icon{width:82px;height:82px}
+.svc li{border-bottom:1px solid var(--hair)}
+.svc li::before{border-radius:50%}
+.course .head{border-radius:0;letter-spacing:.08em}
+.course .price{font-size:1.5rem}
+.step .num{width:54px;height:54px;font-size:1.3rem}
+.group-title{border-left:none;padding-left:0;position:relative;padding-bottom:14px}
+.group-title::after{content:"";position:absolute;left:0;bottom:0;width:74px;height:5px;background:var(--primary);border-radius:999px}
+.member .badge{border-radius:999px}
+.member .tags span{border-radius:999px}
+.member h3{font-size:1.3rem}
+.member .mblock b{color:#9A93BE;letter-spacing:.2em}
+.partner img{border-radius:12px}
+.photo figcaption{padding:16px 20px}
 
-.group-title{border-left:8px solid var(--primary);padding-left:16px}
-.member .photo-wrap{aspect-ratio:1/1;border-bottom:1px solid #E1E4EA}
-.member .badge{border-radius:2px;background:#16181D;color:#fff;letter-spacing:.14em}
-.member h3{font-size:1.34rem}
-.member .mblock b{color:#8A90A0;letter-spacing:.2em}
-.member .tags span{border-radius:2px;background:#F0F2F5;color:#2E323B}
-
-.course .head{letter-spacing:.06em;font-weight:900}
-.course .price{font-size:1.6rem;letter-spacing:-.01em}
-.step .num{border-radius:2px}
-.sign .n{border-radius:2px}
-.partner{background:#fff}
-.photo figcaption b{font-weight:900}
-
-table.strat th{background:#16181D;letter-spacing:.1em}
-.table-wrap{border:1px solid #E1E4EA}
-
-.article{padding:52px 48px}
-.article h2{border-left:6px solid var(--primary);padding-left:14px}
-.article h3{color:var(--ink)}
-.article .callout{background:var(--tint);border-left:6px solid var(--primary)}
-.news-card .callout{background:var(--tint);border-left:6px solid var(--primary)}
-.hours-badge{border-radius:2px;background:#16181D;color:#fff}
-ul.causes li{border-radius:2px;background:#16181D;color:#fff}
-.big-tel{letter-spacing:-.01em}
-@media(max-width:640px){.article{padding:30px 22px}}
+table.strat th{background:var(--primary);letter-spacing:.08em}
+.table-wrap{border:1px solid #E7E2F7;overflow:hidden}
+table.strat{min-width:720px}
+.article{padding:54px 50px}
+.article h2{border-left:none;padding-left:0;position:relative;padding-bottom:10px}
+.article h2::after{content:"";position:absolute;left:0;bottom:0;width:54px;height:4px;background:var(--hl);border-radius:999px}
+.article .callout{background:#F1EEFB;border-left:5px solid var(--primary);border-radius:26px 10px 26px 10px}
+.news-card .callout{background:#F1EEFB;border-left:5px solid var(--primary);border-radius:26px 10px 26px 10px}
+.news-card h3{border-left:none;padding-left:0;color:var(--primary-deep)}
+.hours-badge{border-radius:999px}
+ul.causes li{border-radius:999px}
+.bg-paper{background:var(--paper);border-top:1px solid #F1EEFB;border-bottom:1px solid #F1EEFB}
+.info-card h3 .dot{width:12px;height:12px}
+@media(max-width:640px){
+  .article{padding:32px 24px;border-radius:28px 10px 28px 10px}
+  .card,.svc,.step,.sign,.course,.post,.partner,.member,.photo,.news-card{border-radius:28px 10px 28px 10px}
+  .hero-img img,.split-img img{border-radius:38px 12px 38px 12px}
+  .crow{border-radius:22px;padding:16px 22px}
+}
