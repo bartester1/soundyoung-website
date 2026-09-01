@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">跳到主要內容</a>
 <div class="topbar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg> 採預約制看診｜星期一～星期六 9:00～21:00｜預約專線 0910-071-370</div>
 <header>
   <div class="header-in">
@@ -37,7 +38,7 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="main" tabindex="-1">
 <nav class="crumb" aria-label="所在位置"><ol><li><a href="index.html">首頁</a></li><li><a href="articles.html">文章分享</a></li><li aria-current="page">學齡兒童 X 語言治療</li></ol></nav>
 <div class="page-hero slim"><span class="eyebrow">文章分享</span></div>
 <section class="art-sec"><div class="sec-in">
@@ -55,6 +56,15 @@
 <h2>我們想對家長說</h2>
 <p>孩子不是不努力，只是需要更合適的方法，進而從學習中獲得成就感，提升內在動機。語言治療就是陪伴孩子，一步一步找到屬於自己的學習方式。因為每一次的小小進步，都能讓孩子更有自信。</p>
 <div class="callout">語言治療，不只是幫助孩子「會說話」，更是幫助他們在閱讀、寫作、理解與表達等能力上走得更穩、更輕鬆。讓努力，看得見。</div>
+<div class="post-cta">
+  <h3>學習跟不上，有時候是語言能力的問題</h3>
+  <p>如果孩子很努力但成績總是不理想，先別急著歸因到不用心。聲揚的語言治療師可以評估孩子的語言理解與敘事能力，找出真正卡住的地方。</p>
+  <div class="cta-row">
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@322vxncz" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 11.6c0 4-3.8 7.2-8.5 7.2-.8 0-1.5-.1-2.2-.2l-4.3 2 1.2-3.5a6.9 6.9 0 0 1-3.2-5.5c0-4 3.8-7.2 8.5-7.2s8.5 3.2 8.5 7.2Z"/></svg> LINE 預約評估</a>
+    <a class="btn btn-tel" href="tel:0910071370"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h2.6l1.4 3.6-1.9 1.4a11.6 11.6 0 0 0 5.4 5.4l1.4-1.9 3.6 1.4V16a2 2 0 0 1-2.2 2A14.6 14.6 0 0 1 5 6.7 2 2 0 0 1 7 3.5Z"/></svg> 0910-071-370</a>
+  </div>
+  <a class="more" href="speech.html">看看聲揚的語言治療服務 →</a>
+</div>
   <p class="disclaimer">本文為一般衛教資訊，無法取代專業評估。若對孩子的發展有疑問，歡迎來電 0910-071-370 或透過 LINE 與我們聊聊。</p>
   <a class="back-link" href="articles.html">← 回文章列表</a>
 </article>
@@ -89,6 +99,32 @@
     b.setAttribute('aria-expanded',String(open));
   });
 })();
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "首頁",
+   "item": "https://www.soundyoung.com.tw/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "文章分享",
+   "item": "https://www.soundyoung.com.tw/articles.html"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "學齡兒童 X 語言治療",
+   "item": "https://www.soundyoung.com.tw/article-2.html"
+  }
+ ]
+}
 </script>
 </body>
 </html>

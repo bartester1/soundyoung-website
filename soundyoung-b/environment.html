@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">跳到主要內容</a>
 <div class="topbar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg> 採預約制看診｜星期一～星期六 9:00～21:00｜預約專線 0910-071-370</div>
 <header>
   <div class="header-in">
@@ -37,7 +38,7 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="main" tabindex="-1">
 <nav class="crumb" aria-label="所在位置"><ol><li><a href="index.html">首頁</a></li><li aria-current="page">環境介紹</li></ol></nav>
 <div class="page-hero">
   <span class="eyebrow">關於我們</span>
@@ -72,15 +73,24 @@
     <h3><span class="dot"></span>聲揚聯合治療所</h3>
     <p><strong>苗栗縣頭份市維新路 26 號</strong></p>
     <p>鄰近頭份市區（品未來 3 社區）。</p>
-    <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=苗栗縣頭份市維新路26號" target="_blank" rel="noopener">在 Google 地圖開啟 →</a>
+    <a class="map-link" href="https://maps.app.goo.gl/Gu1w9eafQggean9Y6" target="_blank" rel="noopener" aria-label="在 Google 地圖開啟 聲揚聯合治療所（維新路 26 號）">在 Google 地圖開啟 →</a>
   </div>
   <div class="card info-card">
     <h3><span class="dot dot2"></span>聲禾語言治療所</h3>
     <p><strong>苗栗縣頭份市富強一街 59 號</strong></p>
     <p>竹南方向的家長也很方便到達。</p>
-    <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=苗栗縣頭份市富強一街59號" target="_blank" rel="noopener">在 Google 地圖開啟 →</a>
+    <a class="map-link" href="https://maps.app.goo.gl/sET2LDkEzW72uoEh9" target="_blank" rel="noopener" aria-label="在 Google 地圖開啟 聲禾語言治療所（富強一街 59 號）">在 Google 地圖開啟 →</a>
   </div>
 </div>
+</div></section>
+<section class="bg-paper"><div class="sec-in center">
+  <span class="eyebrow">想親自看看</span>
+  <h2>歡迎預約時順道參觀環境</h2>
+  <p class="sec-sub">照片看得到空間，看不到孩子在裡面的樣子。預約評估時可以先繞一圈，讓孩子熟悉一下環境再開始。</p>
+  <div class="cta-row">
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@322vxncz" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.5 11.6c0 4-3.8 7.2-8.5 7.2-.8 0-1.5-.1-2.2-.2l-4.3 2 1.2-3.5a6.9 6.9 0 0 1-3.2-5.5c0-4 3.8-7.2 8.5-7.2s8.5 3.2 8.5 7.2Z"/></svg> LINE 線上預約</a>
+    <a class="btn btn-tel" href="tel:0910071370"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3.5h2.6l1.4 3.6-1.9 1.4a11.6 11.6 0 0 0 5.4 5.4l1.4-1.9 3.6 1.4V16a2 2 0 0 1-2.2 2A14.6 14.6 0 0 1 5 6.7 2 2 0 0 1 7 3.5Z"/></svg> 0910-071-370</a>
+  </div>
 </div></section>
 </main>
 <footer>
@@ -112,6 +122,26 @@
     b.setAttribute('aria-expanded',String(open));
   });
 })();
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "首頁",
+   "item": "https://www.soundyoung.com.tw/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "環境介紹",
+   "item": "https://www.soundyoung.com.tw/environment.html"
+  }
+ ]
+}
 </script>
 </body>
 </html>

@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">跳到主要內容</a>
 <div class="topbar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 1.9"/></svg> 採預約制看診｜星期一～星期六 9:00～21:00｜預約專線 0910-071-370</div>
 <header>
   <div class="header-in">
@@ -37,7 +38,7 @@
     </nav>
   </div>
 </header>
-<main>
+<main id="main" tabindex="-1">
 <nav class="crumb" aria-label="所在位置"><ol><li><a href="index.html">首頁</a></li><li aria-current="page">課程與收費</li></ol></nav>
 <div class="page-hero">
   <span class="eyebrow">服務與課程</span>
@@ -77,6 +78,7 @@
 <section class="bg-paper"><div class="sec-in center">
   <span class="eyebrow">不確定該上哪種課？</span>
   <h2>從一次評估開始就好</h2>
+  <p class="who-runs">評估與課程由 10 位領照治療師執行——語言治療師 6 位、職能治療師 4 位。 <a href="team.html">認識治療團隊 →</a></p>
   <p class="sec-sub">很多家長一開始也不確定孩子需要什麼。沒關係——預約一次評估，治療師會觀察孩子的狀況，告訴你目前的發展位置，以及最適合的下一步。</p>
 <div class="flow">
   <div class="step"><div class="num">1</div><h3>預約評估</h3><p>電話或 LINE 告訴我們孩子的年齡與狀況</p></div>
@@ -119,6 +121,26 @@
     b.setAttribute('aria-expanded',String(open));
   });
 })();
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "首頁",
+   "item": "https://www.soundyoung.com.tw/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "課程與收費",
+   "item": "https://www.soundyoung.com.tw/course.html"
+  }
+ ]
+}
 </script>
 </body>
 </html>
