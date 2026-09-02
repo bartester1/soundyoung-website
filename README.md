@@ -1,40 +1,43 @@
-# 聲揚聯合治療所 — 官網六版本（完整實際內容）
+# 聲揚聯合治療所 — 官網改版
 
-內容與照片全部取自官網 https://www.soundyoung.com.tw/ （擷取日期 2026-08-31），**沒有任何佔位或示意文字**。
+內容與照片取自官網 https://www.soundyoung.com.tw/ （擷取日期 2026-08-31），**沒有任何佔位或示意文字**。
 
-線上 demo：https://bartester1.github.io/soundyoung-website/
+線上 demo：https://bartester1.github.io/soundyoung-website/soundyoung-b/
 
-## 六個版本
+## 版本
 
-| 資料夾 | 風格 | 主色 | 字體 |
-|---|---|---|---|
-| `soundyoung-b` | 清新自然・森林系 | 鼠尾草綠＋奶油白＋杏色 | Noto Sans TC |
-| `soundyoung-c` | 明亮親子・繪本風 | 天空藍＋鵝黃（粗框貼紙感） | Huninn 粉圓體＋Noto Sans TC |
-| `soundyoung-d` | 沉穩專業・質感診所 | 深藍灰＋暖米＋金線 | Noto Serif TC 明體＋Noto Sans TC |
-| `soundyoung-e` | 暖陽奶油・日系柔和 | 奶油白＋杏桃橘＋灰綠（無框、大量留白） | LXGW WenKai TC 楷體＋Noto Sans TC |
-| `soundyoung-f` | 現代明快・大字排版 | 近黑＋珊瑚橘＋鵝黃（高對比、方正邊角） | Noto Sans TC 900 |
-| `soundyoung-g` | 薰衣草薄荷・有機圓弧 | 薰衣草紫＋薄荷綠＋杏橘（不對稱圓角、無直角） | Noto Sans TC＋Zen Maru Gothic（拉丁字） |
+只保留 **`soundyoung-b`｜清新自然・森林系**（鼠尾草綠＋奶油白＋杏色，Noto Sans TC）。
+先前並列比較的 C～G 五個版本已於 2026-09-02 移除，內容仍保留在 git 歷史中。
 
-六版**頁面結構與文字內容完全相同**，只有 `assets/style.css` 不同。挑一個資料夾整包上傳即可上線。
-全部為靜態 HTML／CSS，無框架、無建置工具、**無動畫**，桌機與手機 RWD 都已實測。
+根目錄的 `index.html` 只是導向 `soundyoung-b/` 的跳轉頁。
 
-## 每版包含 15 頁
+靜態 HTML／CSS，**無框架、無建置工具、無 JavaScript 函式庫、無動畫**，全站樣式集中在 `assets/style.css`（約 300 行）。
+
+## 頁面（16 頁）
 
 | 檔案 | 內容 |
 |---|---|
-| `index.html` | 首頁：官網橫幅、發展遲緩說明、三大服務、關於聲揚、課程收費、最新消息、院區資訊 |
-| `team.html` | 治療團隊：**10 位治療師實際照片**、姓名、學歷、工作經歷、證照、專長 |
-| `environment.html` | 環境介紹：**14 張治療所實景照片** |
-| `cooperate.html` | 合作單位：**6 個實際單位標誌與名稱** |
-| `course.html` | 課程與收費：實際價格（1500／1200 元） |
-| `speech.html` | 語言治療：服務說明＋**7 項居家語言刺激策略表**＋6 位語言治療師 |
-| `ot.html` | 職能治療：5 個常見情境＋6 項服務內容＋4 位職能治療師 |
+| `index.html` | 首頁：主視覺、三大服務、治療團隊、關於聲揚、課程收費、發展遲緩說明、最新消息、院區資訊 |
+| `team.html` | 治療團隊：10 位治療師照片、學歷、工作經歷、證照、專長 |
+| `environment.html` | 環境介紹：14 張治療所實景照片 |
+| `cooperate.html` | 合作單位：6 個實際單位（含兒童通報轉介中心聯絡方式） |
+| `course.html` | 課程與收費：初次評估 0 元、實際價格、早療補助說明（`#subsidy`） |
+| `speech.html` | 語言治療：服務說明＋7 項居家語言刺激策略表 |
+| `ot.html` | 職能治療：5 個常見情境＋6 項服務內容 |
 | `articles.html` | 文章列表（5 篇） |
-| `article-1~5.html` | 5 篇實際文章全文 |
+| `article-1~5.html` | 5 篇實際文章全文，各含文末轉換區塊 |
 | `news.html` | 消息公告《我們進化囉》全文 |
-| `contact.html` | 聯絡我們：電話、LINE、FB、IG、E-mail、診療時間、雙院區地圖 |
+| `contact.html` | 聯絡我們：預約流程、聯絡方式、雙院區嵌入地圖 |
+| `404.html` | 找不到頁面（noindex；需 B 版內容位於站台根目錄才會生效） |
 
-另含 `robots.txt`、`sitemap.xml`、`assets/img/`（38 張實際照片）。
+另含 `robots.txt`、`sitemap.xml`、`assets/img/`（44 個檔案）。
+
+## 已完成的品質基準
+
+- **無障礙**：16 頁完整標題階層、`lang`、全 `alt`、全語意連結名稱、skip link（WCAG 2.4.1 Level A）、允許縮放、目標尺寸 48–56px（超過 2.5.5 AAA）
+- **對比**：全站配色實測通過 WCAG 2.1 AA（4.5:1）。LINE 按鈕保留品牌亮綠 `#06C755`，文字用 `#0B2E16`（6.57:1）
+- **SEO**：每頁 canonical、meta description、og 五件套、Twitter card；`MedicalClinic` JSON-LD ×2、`BreadcrumbList` ×14
+- **效能**：首頁 8 個請求；圖庫 2,370 KB（長邊上限 1000px、q82 progressive）；主視覺用 `srcset` 提供 600／900／1400 三種寬度
 
 ## 治療團隊（頁面實際收錄）
 
@@ -52,39 +55,50 @@
 
 ## 本機預覽
 
-在任一版本資料夾內執行，然後開 http://localhost:8000
+在 repo 根目錄執行，然後開 http://localhost:8000/soundyoung-b/
 
 ```bash
 python -m http.server 8000
 ```
 
-## 上線部署（免費雲端代管，不用買主機）
+## 上線部署
 
-### 方案一：Cloudflare Pages（推薦，台灣連線快）
+### 方案一：Cloudflare Pages（推薦，台灣連線快，且可設 301 轉址）
 
 1. 到 https://dash.cloudflare.com 註冊帳號
-2. Workers & Pages → Create → Pages → **Upload assets**，把選定版本資料夾的內容整包拖上去
+2. Workers & Pages → Create → Pages → **Upload assets**，把 `soundyoung-b` 資料夾的**內容**整包拖上去（`index.html` 要在根）
 3. 部署後會得到 `xxx.pages.dev` 網址，先確認顯示正常
-4. 網域：`.com` 可直接在 Cloudflare Registrar 註冊（成本價約 USD $10/年）；`.com.tw` 需向台灣註冊商（PChome、Gandi）購買，再把 DNS 指向 Cloudflare
+4. 網域：`.com` 可直接在 Cloudflare Registrar 註冊；`.com.tw` 需向台灣註冊商購買再把 DNS 指向 Cloudflare
 5. Pages 專案 → Custom domains → 加入網域，照指示設 CNAME，SSL 憑證自動配發
 
 ### 方案二：GitHub Pages
 
-1. 建一個 GitHub repo，把選定版本資料夾的**內容**（`index.html` 要在 repo 根目錄）push 上去
-2. Settings → Pages → Source 選 `main` → 得到 `帳號.github.io/repo名`
-3. 自訂網域：Settings → Pages → Custom domain 填入網域，並到網域商後台設定
-   - `www` CNAME → `帳號.github.io`
-   - 根網域 A 記錄 → 185.199.108.153 / 185.199.109.153 / 185.199.110.153 / 185.199.111.153
+1. 把 `soundyoung-b` 的**內容**放到 repo 根目錄（`index.html` 要在根，`404.html` 才會生效）
+2. Settings → Pages → Source 選 `main`
+3. 自訂網域：Settings → Pages → Custom domain 填入網域，並到網域商後台設定 `www` CNAME 與根網域 A 記錄（IP 以 GitHub 文件公告為準）
 4. 勾選 Enforce HTTPS
 
-### 換網域後要改的兩個檔案
+## 換網域時要做的事
 
-若新網址不是 `www.soundyoung.com.tw`，請把 `sitemap.xml` 與 `robots.txt` 內的網域一併換掉。
+網域字串目前在 HTML 的 canonical／og／JSON-LD、`sitemap.xml`、`robots.txt` 共出現 107 處，全部一致，一次取代即可：
+
+```bash
+grep -rl "https://www.soundyoung.com.tw" soundyoung-b/ | xargs sed -i "s|https://www.soundyoung.com.tw|https://新網域|g"
+```
+
+### 若要取代現行正式站
+
+舊站有 9 個網址在 B 版改了檔名（`pics-list-1`→`environment`、`contents-1`→`articles`、`contents-2`→`news`、`yuyanz`→`speech`、`zhinengz`→`ot`、`content-4/8/9/10`→`article-N`），需要 301 轉址。GitHub Pages 發不了 301，建議走 Cloudflare Pages 或在前面掛 Cloudflare。
+
+## 尚未完成
+
+- **線上預約表單**：需決定用 Jotform 或 Google 表單、收件信箱與欄位
+- **GA4**：需 Measurement ID，掛上後才能量測 `tel:` 與 LINE 的點擊
 
 ## 日後維護
 
-改哪一頁就編輯那個 `.html`（全站樣式集中在 `assets/style.css`），存檔後重新上傳（或 `git push`）即可。
+改哪一頁就編輯那個 `.html`（全站樣式集中在 `assets/style.css`），存檔後 `git push` 即可。
 
 新增文章：複製 `article-5.html` 改成 `article-6.html`，再到 `articles.html` 列表加一張卡片，並在 `sitemap.xml` 加一行。
 
-新增／更換照片：把圖片放進 `assets/img/`，再修改對應頁面的 `<img src="assets/img/檔名">`。
+新增／更換照片：把圖片放進 `assets/img/`，再修改對應頁面的 `<img src="assets/img/檔名">`。新圖請先縮到長邊 1000px 以內。
