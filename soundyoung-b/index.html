@@ -22,6 +22,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2758WWD33"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-Y2758WWD33');
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;if(!a)return;
+  var h=a.getAttribute('href')||'';
+  if(h.slice(0,4)==='tel:'){gtag('event','contact_phone',{link_url:h,page_path:location.pathname});}
+  else if(h.indexOf('line.me')>-1){gtag('event','contact_line',{link_url:h,page_path:location.pathname});}
+});
+</script>
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -237,6 +249,51 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "Organization",
+   "@id": "https://www.soundyoung.com.tw/#org",
+   "name": "聲揚聯合治療所",
+   "alternateName": "SOUND YOUNG THERAPY",
+   "url": "https://www.soundyoung.com.tw/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.soundyoung.com.tw/assets/img/uploads_use_20250429132827d243.jpg",
+    "width": 231,
+    "height": 204
+   },
+   "image": "https://www.soundyoung.com.tw/assets/img/og-cover.jpg",
+   "telephone": "+886-910-071-370",
+   "email": "soundyoung351@gmail.com",
+   "areaServed": [
+    {
+     "@type": "City",
+     "name": "頭份市"
+    },
+    {
+     "@type": "City",
+     "name": "竹南鎮"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "苗栗縣"
+    }
+   ],
+   "sameAs": [
+    "https://www.facebook.com/profile.php?id=61554427080580",
+    "https://www.instagram.com/sound.young_stot",
+    "https://line.me/R/ti/p/@322vxncz"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://www.soundyoung.com.tw/#website",
+   "url": "https://www.soundyoung.com.tw/",
+   "name": "聲揚聯合治療所",
+   "inLanguage": "zh-Hant-TW",
+   "publisher": {
+    "@id": "https://www.soundyoung.com.tw/#org"
+   }
+  },
+  {
    "@type": "MedicalClinic",
    "@id": "https://www.soundyoung.com.tw/#clinic-soundyoung",
    "name": "聲揚聯合治療所",
@@ -285,7 +342,10 @@
      "@type": "MedicalTherapy",
      "name": "職能治療"
     }
-   ]
+   ],
+   "parentOrganization": {
+    "@id": "https://www.soundyoung.com.tw/#org"
+   }
   },
   {
    "@type": "MedicalClinic",
@@ -336,7 +396,10 @@
      "@type": "MedicalTherapy",
      "name": "職能治療"
     }
-   ]
+   ],
+   "parentOrganization": {
+    "@id": "https://www.soundyoung.com.tw/#org"
+   }
   }
  ]
 }

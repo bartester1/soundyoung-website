@@ -19,6 +19,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2758WWD33"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-Y2758WWD33');
+document.addEventListener('click',function(e){
+  var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;if(!a)return;
+  var h=a.getAttribute('href')||'';
+  if(h.slice(0,4)==='tel:'){gtag('event','contact_phone',{link_url:h,page_path:location.pathname});}
+  else if(h.indexOf('line.me')>-1){gtag('event','contact_line',{link_url:h,page_path:location.pathname});}
+});
+</script>
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
