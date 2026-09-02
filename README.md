@@ -11,7 +11,7 @@
 
 根目錄的 `index.html` 只是導向 `soundyoung-b/` 的跳轉頁。
 
-靜態 HTML／CSS，**無框架、無建置工具、無 JavaScript 函式庫、無動畫**，全站樣式集中在 `assets/style.css`（約 300 行）。
+靜態 HTML／CSS，**無框架、無建置工具、無動畫**。唯一的外部 JS 是 GA4 的 `gtag.js`，自有腳本只有選單開合與事件委派兩段 inline。全站樣式集中在 `assets/style.css`（326 行）。
 
 ## 頁面（16 頁）
 
@@ -36,8 +36,8 @@
 
 - **無障礙**：16 頁完整標題階層、`lang`、全 `alt`、全語意連結名稱、skip link（WCAG 2.4.1 Level A）、允許縮放、目標尺寸 48–56px（超過 2.5.5 AAA）
 - **對比**：全站配色實測通過 WCAG 2.1 AA（4.5:1）。LINE 按鈕保留品牌亮綠 `#06C755`，文字用 `#0B2E16`（6.57:1）
-- **SEO**：每頁 canonical、meta description、og 五件套、Twitter card；`MedicalClinic` JSON-LD ×2、`BreadcrumbList` ×14
-- **效能**：首頁 8 個請求；圖庫 2,370 KB（長邊上限 1000px、q82 progressive）；主視覺用 `srcset` 提供 600／900／1400 三種寬度
+- **SEO**：每頁 canonical、meta description、og 五件套、Twitter card；JSON-LD 四種型別 —— `Organization`、`WebSite`、`MedicalClinic` ×4（雙院區，index 與 contact 各一組）、`BreadcrumbList` ×14
+- **效能**：首頁 11 個請求、856 KB（自有內容 349 KB＋gtag.js 507 KB）；圖庫 2,370 KB（長邊上限 1000px、q82 progressive）；主視覺用 `srcset` 提供 600／900／1400 三種寬度
 
 ## 治療團隊（頁面實際收錄）
 
