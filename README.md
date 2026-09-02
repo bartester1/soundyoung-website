@@ -80,7 +80,7 @@ python -m http.server 8000
 
 ## 換網域時要做的事
 
-網域字串目前在 HTML 的 canonical／og／JSON-LD、`sitemap.xml`、`robots.txt` 共出現 107 處，全部一致，一次取代即可：
+網域字串目前在 HTML 的 canonical／og／JSON-LD、`sitemap.xml`、`robots.txt` 共出現 116 處，全部一致，一次取代即可：
 
 ```bash
 grep -rl "https://www.soundyoung.com.tw" soundyoung-b/ | xargs sed -i "s|https://www.soundyoung.com.tw|https://新網域|g"
@@ -90,10 +90,22 @@ grep -rl "https://www.soundyoung.com.tw" soundyoung-b/ | xargs sed -i "s|https:/
 
 舊站有 9 個網址在 B 版改了檔名（`pics-list-1`→`environment`、`contents-1`→`articles`、`contents-2`→`news`、`yuyanz`→`speech`、`zhinengz`→`ot`、`content-4/8/9/10`→`article-N`），需要 301 轉址。GitHub Pages 發不了 301，建議走 Cloudflare Pages 或在前面掛 Cloudflare。
 
-## 尚未完成
+## 分析追蹤
 
-- **線上預約表單**：需決定用 Jotform 或 Google 表單、收件信箱與欄位
-- **GA4**：需 Measurement ID，掛上後才能量測 `tel:` 與 LINE 的點擊
+已掛 GA4，沿用治療所既有 property `G-Y2758WWD33`（與原站同一組，取代原站後資料連續）。
+除了預設的頁面瀏覽，另有兩個自訂事件：
+
+| 事件 | 觸發 | 參數 |
+|---|---|---|
+| `contact_phone` | 點擊任何 `tel:` 連結 | `link_url`、`page_path` |
+| `contact_line` | 點擊任何 line.me 連結 | `link_url`、`page_path` |
+
+兩個事件需在 GA4 後台設為「關鍵事件」才會進轉換報表。
+
+## 不實作的項目
+
+- **線上預約表單**：治療所只走電話與 LINE，不採用表單（營運選擇）
+- **FAQ**：治療所沒有制式規定（要帶什麼、改期規則等），資訊不存在
 
 ## 日後維護
 
